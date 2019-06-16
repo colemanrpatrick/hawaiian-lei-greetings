@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>hawaiian lei greetings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400|Pacifico:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+  </head>
+  <body onresize="resizeReset('frame');checkSlideSize('frame','section',3);">
+    <nav class="main-nav" id="main-nav">
+      <a href="#">oahu</a>
+      <a href="#">maui</a>
+      <a href="#">kauai</a>
+      <a href="#">big island</a>
+      <a href="#">contact</a>
+      <a href="#">cart</a>
+    </nav>
+    <div class="wrapper">
+      <div class="masthead">
+        <section>
+          <div class="logo">
+          <h1><a href="#" class="logo"><img src="images/hawaiiLeiGreetingsLogo.png"><span>hawaiian</span><br/>lei greetings</a></h1>
+          </div>
+          <a href="#" class="cart-link">
+            <i class="material-icons">shopping_cart</i>
+          </a>
+          <button type="button" class="menu-btn" name="button" id="menu-btn" onclick="idToggle('main-nav','active')">
+            <hr class="menu-btn-hr-1"/>
+            <hr class="menu-btn-hr-2"/>
+            <hr class="menu-btn-hr-3"/>
+          </button>
+        </section>
+        <nav class="phone">
+          <ul>
+            <li><a href="#" onclick="tel:+1-866-482-9775"><span>toll free</span> 1-866-482-9775</a></li>
+            <li><a href="#" onclick="tel:808-892-2082"><span>local</span> 808-892-2082</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="banner">
+        <section>
+        </section>
+        <article>
+          <h2>a hawaiian tradition</h2>
+          <div class="island-nav">
+            <p>reserve your hawaiian airport lei greeting by selecting an arrival destination</p>
+            <ul>
+              <li id="anchorOahu"><a href="#">Honolulu</br><div class="island-img"><img src="images/islands.jpg" alt=""></div><span>oahu</span></a></li>
+              <li id="anchorMaui"><a href="#">kahului</br><div class="island-img"><img src="images/islands.jpg" alt=""></div><span>maui</span></a></li>
+              <li id="anchorKauai"><a href="#">lihue</br><div class="island-img"><img src="images/islands.jpg" alt=""></div><span>kauai</span></a></li>
+              <li id="anchorBigi"><a href="#">kona</br><div class="island-img"><img src="images/islands.jpg" alt=""></div><span>big island</span></a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!--=== main nav -->
+      <div class="lei-catalog">
+        <!-- ===================-->
+        <div id="framecont">
+          <h3>browse our selection of leis</h3>
+          <div class="frame" id="frame">
+            <section>
+              <article>
+                <div class="lei-img" id="lei-1"><img src="images/hawaiiLeis.jpg"></div>
+                <header>candy lei</header>
+                <button type="button" name="button" class="tool-tip-btn">?</button>
+                <div class="tool-tip" id="desc-1">
+                  <p>short tool-tip of lei and details</p>
+                </div>
+                <span>from <b>$00.00</b></span>
+              </article>
+              <article>
+                <div class="lei-img" id="lei-2"><img src="images/hawaiiLeis.jpg"></div>
+                <header>cigar lei</header>
+                <button type="button" name="button" class="tool-tip-btn">?</button>
+                <div class="tool-tip" id="desc-2">
+                  <p>short tool-tip of lei and details</p>
+                </div>
+                <span>from <b>$00.00</b></span>
+              </article>
+              <article>
+                <div class="lei-img" id="lei-3"><img src="images/hawaiiLeis.jpg"></div>
+                <header>deluxe lei</header>
+                <button type="button" name="button" class="tool-tip-btn">?</button>
+                <div class="tool-tip" id="desc-3">
+                  <p>short tool-tip of lei and details</p>
+                </div>
+                <span>from <b>$00.00</b></span>
+              </article>
+            </section>
+            <section>
+              <article>
+                <div class="lei-img" id="lei-4"><img src="images/hawaiiLeis.jpg"></div>
+                <header>kukui nut</header>
+                <button type="button" name="button" class="tool-tip-btn">?</button>
+                <div class="tool-tip" id="desc-4">
+                  <p>short tool-tip of lei and details</p>
+                </div>
+                <span>from <b>$00.00</b></span>
+              </article>
+              <article>
+                <div class="lei-img" id="lei-5"><img src="images/hawaiiLeis.jpg"></div>
+                <header>ti lei</header>
+                <button type="button" name="button" class="tool-tip-btn">?</button>
+                <div class="tool-tip" id="desc-5">
+                  <p>short tool-tip of lei and details</p>
+                </div>
+                <span>from <b>$00.00</b></span>
+              </article>
+              <article>
+                <div class="lei-img" id="lei-6"><img src="images/hawaiiLeis.jpg"></div>
+                <header>superior lei</header>
+                <button type="button" name="button" class="tool-tip-btn">?</button>
+                <div class="tool-tip" id="desc-6">
+                  <p>short tool-tip of lei and details</p>
+                </div>
+                <span>from <b>$00.00</b></span>
+              </article>
+            </section>
+            <section>
+              <!-- comments fix inlineblock spaces (don't remove) -->
+              <!-- --><article>
+                <div class="lei-img" id="lei-7"><img src="images/hawaiiLeis.jpg"></div>
+                <header>delux tuberose lei</header>
+                <button type="button" name="button" class="tool-tip-btn">?</button>
+                <div class="tool-tip" id="desc-7">
+                  <p>short tool-tip of lei and details</p>
+                </div>
+                <span>from <b>$00.00</b></span>
+              </article><!--
+              --><article>
+                <div class="lei-img" id="lei-8"><img src="images/hawaiiLeis.jpg"></div>
+                <header>standard lei</header>
+                <button type="button" class="tool-tip-btn" name="button">?</button>
+                <div class="tool-tip" id="desc-8">
+                  <p>short tool-tip of lei and details</p>
+                </div>
+                <span>from <b>$00.00</b></span>
+              </article><!--
+              --><article>
+                <div class="lei-img" id="lei-9"><img src="images/hawaiiLeis.jpg"></div>
+                <header>tuberoseMix lei</header>
+                <button type="button" class="tool-tip-btn" name="button">?</button>
+                <div class="tool-tip" id="desc-9">
+                  <p>short tool-tip of lei and details</p>
+                </div>
+                <span>from <b>$00.00</b></span>
+              </article><!-- -->
+            </section>
+          </div>
+          <button type="button" id="frameBtn" name="button" onclick="slideToggle('frame',true,3);closeAllTip()"></button>
+        </div>
+        <!-- ================= -->
+        <div class="article-first">
+          <h3>always fresh because its all we do..</h3>
+          <p>If you want fresh flower lei greetings, then make sure you order from us. All our leis are fresh and are NOT associated with a transportation company. All we do is offer the best fresh flower lei greetings and do not combo them with a transportation company.</p>
+        </div>
+        <!-- ================= -->
+       </div>
+      <!-- ================= -->
+      <div class="article-second">
+        <div class="video-cont">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DR8On9fLbRU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <article><p>Experience a traditional welcome to the Islands with a Hawaiian flower lei greeting at the airport! A lei greeting is a warm and wonderful way to begin a Hawaiian vacation and experience the aloha spirit.</p><hr/>
+        <p>Your friendly lei greeter will wait for you at your arrival gate at the airport and welcome you with a fresh flower lei. Reserve a Hawaiian lei greeting for yourself, or make a special gift for someone else. This is also a great gift idea for honeymooners or first-time visitors to Hawaii.</p>
+      </article>
+      </div>
+      <div class="article-third">
+        <header>
+          <h3>"the lowest prices on all lei greetings in Hawaii"</h3>
+        </header>
+          <article>
+          <p>You can choose between a variety of leis, including standard leis, leis for men or kid-friendly candy leis. We only use the best flowers available – dendrobium orchids, carnations, plumerias, tuberose or superior combinations of these flowers.</p> <hr/>
+          <p>The type of flower used on any lei is subject to season and availability. We offer the lowest prices on all lei greetings in Hawaii.</p>
+        </article>
+        <aside>
+          <div class="img-cont">
+            <img src="images/hawaiiLeiGreetingsGirl.jpg">
+          </div>
+          <p>A flower lei greeting at the airport is a great way to start your Hawaii vacation. Have one of our Hawaii airport greeters meet you with a beautiful Hawaiian lei. Order your Hawaiian lei greeting today.</p>
+        </aside>
+      </div>
+      <div class="misc-section">
+        <article>
+          <h4>Instructions for Lei Greetings at HONOLULU Airport:</h4>
+          <p>Greeter will wait for you inside baggage claim at the Honolulu airport wearing a sand/black uniform, with a welcome sign with your name or group name.</p>
+          <h4>Instructions for Lei Greetings at Kahului MAUI, Lihue KAUAI and Kona HAWAII Airport:</h4>
+          <p>You will see your Greeter as you exit the terminal, prior to baggage claim. They will be wearing a purple/white uniform and welcome sign personalized with your name or group name.</p>
+        </article>
+      </div>
+      <!-- ================= -->
+      <footer class="footer">
+        <header>
+          <div class="logo">
+          <h2><a href="#" class="logo"><img src="images/hawaiiLeiGreetingsLogo.png"><span>hawaiian</span><br/>lei greetings</a></h2>
+          </div>
+        </header>
+        <div class="social">
+          <p>follow us</p>
+          <a class="facebook-social" href="https://www.facebook.com/HawaiiDiscount"></a>
+          <a class="twitter-social" href="https://twitter.com/hawaiidiscount"></a>
+          <a class="youtube-social" href="https://www.youtube.com/hawaiidiscount"></a>
+          <a class="pinterest-social" href="https://www.pinterest.com/hawaiidiscount/"></a>
+        </div>
+        <section>
+          <ul>
+            <li><b>navigation</b></li>
+            <li> <a href="#">home</a> </li>
+            <li> <a href="#">contact</a> </li>
+            <li> <a href="#">about us</a> </li>
+            <li> <a href="#">cart</a> </li>
+          </ul>
+          <ul>
+            <li><b>site info</b></li>
+            <li> <a href="#">faq</a> </li>
+            <li> <a href="#">site map</a> </li>
+            <li> <a href="#">privacy policy</a> </li>
+            <li> <a href="#">terms</a> </li>
+            <li> <a href="#">login</a> </li>
+          </ul>
+        </section>
+        <p>Copyright (c) 2019 hawaii discount All Rights Reserved.</p>
+      </footer>
+    </div>
+      <script src="toggle.js"></script>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>

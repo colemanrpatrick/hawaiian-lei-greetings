@@ -1,0 +1,1129 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	-ms-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+}
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+*:not(.fa){
+	font-family: "Oswald",sans-serif;
+}
+a{
+	text-decoration: none !important;
+}
+li,ul{
+	list-style-type: none !important;
+}
+body{
+  position: relative;
+	padding: 0;
+  margin: 0;
+	background-color:#fffdf4;
+}
+button:focus{
+	outline: 0 !important;
+}
+.wrapper{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+/*=======================*/
+/* yellow:ffff73; */
+
+.masthead {
+  font-size: 18px;
+  width: 100%;
+  position: relative;
+	box-shadow:-12px 0px 15px -10px #00000080,12px 0px 15px -10px #00000080;
+	background-color: #ff6380;
+}
+.masthead section {
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  padding: 1em 1em;
+}
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+}
+.logo img {
+  float: left;
+  height: 1em;
+  margin-right: 0.1em;
+	transition: 0.3s;
+}
+.logo:hover .logo img{
+	transform: rotate(180deg);
+}
+.logo h1,
+.logo h2{
+  color: white !important;
+  font-weight: normal;
+  font-size: 2.35em;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+.logo a span{
+  font-family: "Oswald";
+  font-size: 0.75em;
+	float: left;
+}
+.logo a {
+  color: inherit !important;
+  font-size: inherit;
+  text-transform: capitalize;
+  font-family: "Kaushan Script";
+  line-height: 1em;
+  display: block;
+  width: 8em;
+}
+.cart-link{
+	display: none;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+	transition: 0.3s;
+}
+.cart-link:hover{
+	transform:translateY(-50%) scale(1.2);
+}
+.cart-link .material-icons{
+  color: white;
+  font-size: 3em;
+}
+.phone {
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 0.5em;
+  background-color: white;
+}
+.main-nav {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+  width: 60%;
+  position: absolute;
+  right: 0;
+	top: 1em;
+  z-index: 2;
+  font-size: 18px;
+  padding: 0.8em 1em;
+}
+.main-nav a {
+  font-size: 1.4em;
+  display: inline-block;
+  margin: 0em 0.5em;
+  vertical-align: middle;
+  color: white;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.main-nav a:hover{
+	text-shadow: 0px 0px 5px white;
+}
+.phone ul{
+	margin: 0 auto;
+	display: table;
+}
+.phone ul li{
+	display: table-cell;
+	width: 50%;
+	vertical-align: middle;
+	text-align: center;
+}
+.phone ul li a span {
+  font-size: 0.75em;
+  text-transform: capitalize;
+	font-family: "Kaushan Script";
+}
+.phone ul li a {
+  color: #5ad0ff;
+  display: block;
+  padding: 0.25em;
+  width: 100%;
+  height: 100%;
+  font-size: 1.65em;
+  font-weight: 300;
+	font-family: "oswald";
+	cursor: pointer;
+}
+.phone ul li a:hover{
+	color: white;
+	background-color: #5ad0ff;
+}
+@media(max-width:1080px){
+	.masthead{
+	  font-size: 16px;
+	}
+	.main-nav {
+		font-size: 16px;
+	}
+}
+@media(max-width:1400px){
+	.masthead section{
+	  width: 100%;
+	}
+}
+@media(max-width:1010px){
+	.masthead section {
+		width: 100%;
+		margin-bottom: 3em;
+		text-align: center;
+	}
+	.logo {
+    width: auto;
+    margin: 0 auto;
+	}
+	.main-nav {
+	  text-align: center;
+	  width: 100%;
+	  background-color: #ff6380;
+    padding: 0.5em 0em;
+		top: 7em;
+	}
+}
+@media(max-width:800px){
+	.masthead{
+	  font-size: 14px;
+	}
+	.main-nav {
+		font-size: 14px;
+	}
+	.phone ul li a {
+		font-size: 2em;
+	}
+}
+.menu-btn{
+	display: none;
+	position: absolute;
+	left: 1em;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 4em;
+	height: 3em;
+	transition: 0.3s;
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+}
+.menu-btn:hover{
+	transform:translateY(-50%) scale(1.2);
+}
+.menu-btn hr {
+	display: block;
+	width: 100%;
+	height: 0.35em;
+	background-color: white;
+	border: 0;
+	transition: 0.3s;
+	position: absolute;
+}
+.menu-btn-hr-1{
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%) rotate(0deg);
+}
+.menu-btn-hr-2{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.menu-btn-hr-3{
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%) rotate(0deg);
+}
+.menu-btn.active .menu-btn-hr-1{
+	top: 50%;
+	transform: translate(-50%,-50%) rotate(-45deg);
+}
+.menu-btn.active .menu-btn-hr-2{
+	opacity: 0;
+}
+.menu-btn.active .menu-btn-hr-3{
+	top: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+@media(max-width:700px){
+	body{
+		white-space: nowrap;
+	}
+	.wrapper{
+		display: inline-block;
+		vertical-align: top;
+		white-space: normal;
+	}
+	.masthead section {
+		padding: 1em;
+    margin-bottom: 0;
+	}
+	.menu-btn{
+		display: block;
+	}
+	.cart-link{
+		display: block;
+	}
+	.phone ul {
+	  width: 100%;
+	}
+	.main-nav {
+	  background-color: gold;
+	  top: auto;
+	  width: 0;
+	  overflow: hidden;
+	  text-align: left;
+	  transition: 0.5s;
+	  position: relative;
+	  left: auto;
+	  margin-right: -5px;
+	  transition: 0.3s;
+	  padding: 0;
+		height: 100vh;
+	}
+	.main-nav.active{
+	  width: 16em;
+	}
+	.main-nav a {
+	  width: 100%;
+	  padding: 1em;
+	  color: black !important;
+	  display: block;
+	  text-transform: uppercase;
+	  font-size: 1.1em;
+	}
+}
+@media(max-width:600px){
+	.masthead{
+	 	font-size: 10px;
+	}
+}
+@media(max-width:400px){
+	.phone ul li a span {
+    display: block;
+    margin: 0 auto;
+    line-height: 0.5em;
+	}
+	.phone ul li a {
+    padding-top: 0.75em;
+	}
+}
+@media(max-width:350px){
+	.menu-btn {
+    width: 3em;
+    height: 2em;
+	}
+}
+/*=======================*/
+.banner{
+	background-color: white;
+	font-size: 18px;
+  border-bottom: 1em solid white;
+	position: relative;
+}
+.banner section{
+	display: inline-block;
+	width: 50%;
+	overflow: hidden;
+	height: 33em;
+	margin-right: -5px;
+	vertical-align: middle;
+	background-position: center;
+	background-size: cover;
+	background-image: url("images/hawaiiLeiGreetingsBanner2.png");
+}
+.banner article{
+	display: inline-block;
+	width: 50%;
+	margin-left: -5px;
+	vertical-align: middle;
+	text-align: center;
+}
+.banner article h2 {
+  width: 100%;
+  text-align: center;
+  font-family: "Kaushan Script";
+  text-transform: capitalize;
+  padding-top: 1em;
+	padding-bottom: 0.5em;
+  color: #008b1e;
+  line-height: 1em;
+  font-size: 3em;
+	padding: 0.5em;
+}
+.banner article p {
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  padding: 0.5em;
+  color: darkred;
+  line-height: 1.2em;
+}
+.island-nav{
+	width: 80%;
+	margin: 0 auto;
+}
+.banner ul{
+	width: 100%;
+	text-align: center;
+}
+.banner ul li {
+  width: 50%;
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: -2px;
+  padding: 1em 1.5em;
+}
+.banner ul li a {
+  font-size: 2em;
+	text-transform: capitalize;
+  line-height: 1em;
+  color: #ff6380;
+  display: inline-block;
+	margin: 0 auto;
+	transition: 0.3s;
+	text-align: center;
+}
+#anchorOahu {
+  text-align: left;
+}
+#anchorMaui {
+  text-align: left;
+}
+#anchorKauai {
+  text-align: right;
+}
+#anchorBigi {
+  text-align: right;
+}
+.island-img{
+	font-size: 0.5em;
+	width: 4em;
+	height: 3em;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.island-img img{
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+.banner ul li a:hover{
+	transform: scale(1.1);
+}
+#anchorOahu img{
+	left: 0;
+}
+#anchorMaui img{
+	left: -100%;
+}
+#anchorKauai img{
+	left: -200%;
+}
+#anchorBigi img{
+	left: -285%;
+}
+.banner ul li a span{
+	font-size: 0.75em;
+	font-family: "Kaushan Script";
+}
+@media(max-width:1150px){
+	.banner {
+    font-size: 17px;
+	}
+}
+@media(max-width:1080px){
+	.banner {
+    font-size: 16px;
+	}
+}
+@media(max-width:1010px){
+	.banner {
+    font-size: 15px;
+	}
+	.banner section {
+    width: 45%;
+	}
+	.banner article {
+    width: 55%;
+	}
+	.banner ul li {
+    padding: 0em 1.5em;
+	}
+	.banner section img {
+    margin-left: -9em;
+	}
+}
+@media(max-width:700px){
+	.banner article h2 {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		bottom: 7em;
+		background-color: #ffffffbf;
+		text-shadow: 0px 0px 5px white;
+	}
+	.banner section {
+    width: 100%;
+    display: block;
+		height: 20em;
+	}
+	.banner article {
+    width: 100%;
+		display: block;
+    margin-left: 0;
+	}
+	#anchorOahu {
+    text-align: center;
+	}
+	#anchorMaui {
+    text-align: center;
+	}
+	#anchorKauai {
+    text-align: center;
+	}
+	#anchorBigi {
+    text-align: center;
+	}
+	.banner ul li {
+    width: 25%;
+	}
+	.island-nav {
+    width: 100%;
+	}
+}
+@media(max-width:600px){
+	.banner {
+    font-size: 13px;
+	}
+	.banner ul li {
+    padding: 0em 0em;
+	}
+	.banner article {
+    padding: 2em 0em;
+	}
+	.banner article h2 {
+	  bottom: 7em;
+	}
+}
+@media(max-width:400px){
+	.banner article h2 {
+		font-size: 2.5em;
+    bottom: 12em;
+	}
+	.banner section {
+    width: 100%;
+    display: block;
+    height: 15em;
+	}
+	.banner ul li {
+    width: 50%;
+    margin-bottom: 2em;
+	}
+	.banner article p {
+    padding: 1em;
+	}
+}
+@media(max-width:350px){
+	.banner {
+    font-size: 11px;
+	}
+}
+/*-------------*/
+.lei-catalog{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	margin: 0 auto;
+}
+#framecont {
+  width: 60%;
+  display: inline-block;
+  margin-left: -5px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  font-size: 1em;
+  vertical-align: middle;
+}
+#framecont h3 {
+  font-size: 2em;
+  font-weight: normal;
+  text-transform: capitalize;
+	width: 100%;
+  text-align: left;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.frame{
+	transition: 0.3s;
+	text-align: center;
+	font-size: 1em;
+}
+.frame section{
+	display: inline-block;
+	text-align: center;
+	border-left: 1em solid #fffdf4;
+	white-space: normal;
+}
+.frame section article {
+  display: inline-block;
+  width: 33.3%;
+  margin-left: -2px;
+  margin-right: -2px;
+  height: 19.4em;
+  overflow: hidden;
+  position: relative;
+  border-right: 1em solid #fffdf4;
+}
+.frame section article header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 1.75em;
+	line-height: 1em;
+  color: white;
+  text-transform: capitalize;
+  font-weight: lighter;
+  background-color: #ffffff82;
+  text-shadow: 0px 2px 5px black;
+  padding: 0.25em;
+}
+.frame section article span b {
+	font-size: 1.75em;
+  font-weight: normal;
+  text-shadow: 0px 0px 5px black;
+}
+.frame section article span {
+  position: absolute;
+  bottom: 0.5em;
+	right: 0.5em;
+  color: white;
+  text-transform: capitalize;
+  font-size: 1em;
+}
+.frame section article span b{
+ 	font-size: 1.5em;
+	font-weight: lighter;
+	display: block;
+}
+.frame section article button {
+  position: absolute;
+  left: 0.25em;
+  bottom: 0.25em;
+	color: white;
+  background-color: #00000094;
+  border-radius: 1em;
+  font-size: 1.5em;
+  border: 0;
+  padding: 0em 0.52em;
+	transition: 0.3s;
+}
+.frame section article button:hover{
+	background-color: gold;
+	color: purple;
+}
+.tool-tip-btn.active{
+	background-color: gold;
+	color: purple;
+}
+.tool-tip{
+  position: absolute;
+  z-index: 3;
+  width: 90%;
+  background-color: white;
+  font-size: 1em;
+  bottom: 4em;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+	transition: 0.3s;
+}
+.tool-tip.active{
+  transform: translateX(-50%) scale(1);
+}
+.tool-tip p{
+	position: relative;
+	padding: 1em;
+	font-size: 1em;
+}
+.tool-tip p::after {
+  content: '';
+  position: absolute;
+  left: 0.75em;
+  bottom: -1.25em;
+  width: 0;
+  height: 0;
+  border-left: 0em solid transparent;
+  border-right: 1.25em solid transparent;
+  border-top: 1.5em solid #fff;
+  z-index: 9;
+}
+.lei-img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.lei-img img {
+  width: 13em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#lei-1 img{
+	top: 0;
+}
+#lei-2 img {
+	top: -19.5em;
+}
+#lei-3 img {
+  top: -39em;
+}
+#lei-4 img {
+  top: -58.5em;
+}
+#lei-5 img {
+  top: -78em;
+}
+#lei-6 img {
+  top: -97.5em;
+}
+#lei-7 img{
+	top: -117em;
+}
+#lei-8 img {
+	top: -136.5em;
+}
+#lei-9 img{
+	top: -156em;
+}
+#frameBtn {
+  display: block;
+	margin: 0.5em auto;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  background: transparent;
+  color: purple;
+  border: 0.12em solid purple;
+  padding: 0em 1em;
+  border-radius: 1em;
+  cursor: pointer;
+}
+.frameNav{
+	margin: 0 auto;
+	text-align: center;
+	width: 200px;
+	display: block;
+}
+/*=================*/
+.article-first {
+  width: 40%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -5px;
+  font-size: 1.1em;
+  padding-left: 1em;
+}
+.article-first h3{
+	font-family: "Kaushan Script";
+	text-transform: capitalize;
+	font-size: 1.75em;
+	color: green;
+	padding: 0.5em;
+	line-height: 1em;
+}
+.article-first p {
+  line-height: 2em;
+  text-align: justify;
+}
+@media(max-width:1000px){
+	.lei-catalog{
+	  font-size: 16px;
+	}
+}
+@media(max-width:1150px){
+	.lei-catalog{
+    font-size: 17px;
+	}
+}
+@media(max-width:1080px){
+	.lei-catalog{
+    font-size: 16px;
+	}
+}
+@media(max-width:1010px){
+	.lei-catalog{
+    font-size: 15px;
+	}
+	.lei-catalog {
+    width: 100%;
+	}
+	.article-first {
+    padding-right: 1em;
+    padding-left: 1em;
+	}
+}
+@media(max-width:700px){
+	#framecont {
+    width: 100%;
+		margin: 0;
+	}
+	.article-first {
+    padding-right: 2em;
+    padding-left: 2em;
+    width: 100%;
+	}
+}
+@media(max-width:650px){
+	#framecont {
+    width: 90%;
+	}
+}
+@media(max-width:600px){
+	.lei-catalog{
+    font-size: 13px;
+	}
+}
+@media(max-width:500px){
+	#framecont {
+    width: 100%;
+	}
+}
+@media(max-width:350px){
+	.lei-catalog{
+    font-size: 11px;
+	}
+}
+/*=========*/
+.article-second{
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	text-align: center;
+	font-size: 18px;
+}
+.article-second .video-cont {
+  width: 50%;
+  display: inline-block;
+  height: 20em;
+  position: relative;
+  vertical-align: middle;
+  margin-right: -5px;
+}
+.article-second .video-cont iframe {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 1.5em;
+  width: 70%;
+  height: 9em;
+}
+.article-second article {
+  display: inline-block;
+  width: 50%;
+  margin-left: -5px;
+  vertical-align: middle;
+  padding: 1em;
+}
+.article-second article p{
+	font-size: 1.1em;
+	line-height: 2em;
+}
+.article-second hr {
+  margin: 0.5em auto;
+  width: 5em;
+  opacity: 0.25;
+}
+/*====*/
+.article-third {
+  width: 90%;
+	margin: 0 auto;
+  font-size: 18px;
+	padding-bottom: 2em;
+}
+.article-third article {
+  display: inline-block;
+  width: 50%;
+  margin-left: -5px;
+  text-align: center;
+  vertical-align: middle;
+	padding: 1em;
+}
+.article-third header h3 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  font-size: 1.75em;
+  font-family: "Kaushan Script";
+  text-transform: capitalize;
+  background-color: rgba(255, 255, 255, 0.76);
+  color: green;
+  text-shadow: 0px 0px 5px white;
+  padding: 1em;
+  transform: translateY(-50%);
+  text-align: center;
+	line-height: 1em;
+	font-weight: normal;
+}
+.article-third header{
+	background-image: url("images/hawaiiLeiGreetingsBanner3.jpg");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 16em;
+	margin-bottom: 2em;
+}
+.article-third article p {
+  font-size: 1.1em;
+	line-height: 2em;
+  text-align: justify;
+  padding: 1em;
+}
+.article-third hr {
+  margin: 0.5em auto;
+  width: 5em;
+  opacity: 0.25;
+}
+.article-third aside{
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-right: -5px;
+}
+.article-third aside p{
+	padding: 1em;
+	font-size: 1em;
+	line-height: 2em;
+	color: darkred;
+}
+.article-third .img-cont {
+  width: 100%;
+  height: 20em;
+  overflow: hidden;
+	position: relative;
+}
+.article-third .img-cont img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+}
+.misc-section{
+	background-color: purple;
+	font-size: 18px;
+	padding: 1em;
+}
+.misc-section article{
+	padding: 2em;
+	text-align: center;
+	width: 90%;
+}
+.misc-section article h4{
+	font-size: 1.5em;
+	font-weight: lighter;
+ 	color: white;
+}
+.misc-section article p{
+ 	font-size: 1em;
+	color: white;
+	padding: 1em;
+}
+@media(max-width:1150px){
+	.article-second{
+    font-size: 17px;
+	}
+	.misc-section{
+		font-size: 17px;
+	}
+	.article-third{
+		font-size: 17px;
+	}
+}
+@media(max-width:1080px){
+	.article-second{
+    font-size: 16px;
+	}
+	.article-third{
+		font-size: 16px;
+	}
+	.misc-section{
+		font-size: 16px;
+	}
+}
+@media(max-width:1010px){
+	.article-second{
+    font-size: 15px;
+	}
+	.article-third{
+		font-size: 15px;
+	}
+	.misc-section{
+		font-size: 15px;
+	}
+	.article-second{
+    width: 100%;
+	}
+	.article-third{
+		width: 100%;
+	}
+	.article-third .img-cont {
+    border-left: 0em solid #fffdf4;
+	}
+}
+@media(max-width:700px){
+	.article-second .video-cont {
+	  width: 100%;
+	}
+	.article-second article {
+    width: 100%;
+    margin-left: 0;
+    padding: 1em;
+	}
+}
+@media(max-width:600px){
+	.article-second{
+    font-size: 13px;
+	}
+	.article-third{
+		font-size: 13px;
+	}
+	.misc-section{
+		font-size: 13px;
+	}
+}
+@media(max-width:350px){
+	.article-second{
+    font-size: 11px;
+	}
+	.misc-section{
+		font-size: 11px;
+	}
+	.article-third{
+		font-size: 11px;
+	}
+}
+/*=============================*/
+footer {
+  width: 100%;
+  padding: 1em;
+  font-size: 18px;
+	background-color: #8b7eca;
+}
+.footer header{
+	text-align: center;
+}
+.social {
+ width:100%;
+ text-align:center
+}
+.social p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  text-transform: capitalize;
+  color: white;
+  padding: 0.5em;
+}
+.social a {
+ display:inline-block;
+ vertical-align:middle;
+ width:2em;
+ height:2em;
+ background-size:cover;
+ background-image:url('images/facebook_twitter_pinterest_youtube.png')
+}
+.facebook-social {
+ background-position:0 0;
+}
+.twitter-social {
+ background-position:32% 0;
+}
+.youtube-social {
+ background-position:66% 0;
+}
+.pinterest-social {
+  background-position: 100% 0;
+}
+.footer-section{
+	width: 100%;
+	padding: 1em;
+}
+.footer section ul{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	margin-left: -5px;
+	text-align: center;
+}
+.footer section ul li{
+	width: 100%;
+}
+.footer section ul li b{
+	font-family: "Lobster";
+	font-size: 1.3em;
+	color: white;
+	text-transform: capitalize;
+}
+.footer section ul li a{
+	display: inline-block;
+	color: white !important;
+	padding: 0.25em;
+	text-transform: capitalize;
+}
+@media(max-width:1000px){
+	.footer{
+		font-size: 16px;
+	}
+}
+@media(max-width:900px){
+	.footer{
+		font-size: 15px;
+	}
+}
+@media(max-width:700px){
+	.social a {
+	 width:3em;
+	 height:3em;
+ }
+	.footer section ul{
+		padding: 2em;
+	}
+	.footer section ul li a{
+		font-size: 1.2em;
+	}
+}
+@media(max-width:550px){
+	.footer{
+		font-size: 14px;
+	}
+}
+@media(max-width:500px){
+	.footer{
+		font-size: 13px;
+}
